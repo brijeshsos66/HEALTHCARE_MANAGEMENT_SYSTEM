@@ -1,0 +1,53 @@
+<html>
+<head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+    <link href="css/form.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="1st.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="mdic.php">Medicines Available</a>
+    <div class="dropdown active">
+        <button class="dropbtn">Login
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="doctor.html">Doctor</a>
+            <a href="patient.html">Patient</a>
+        </div>
+    </div>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <div class="logo">Health Care</div>
+</div>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+<form class="patient" action="pris.php" method="post">
+    <h1>Enter Prescription Details</h1>
+    <input placeholder="Prescription Id" type="int" name="presid" required>
+    <input placeholder="Medicine Quantity" type="int" name="mq" required>
+    <input placeholder="Patient Name" type="text" name="pname" required>
+    <input placeholder="Medicine Id" type="int" name="mname" required>
+    
+    
+    <button>Submit</button>
+</form>
+</body>
+</html>
+
+
+
+
+
+

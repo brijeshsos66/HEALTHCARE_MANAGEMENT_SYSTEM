@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <style>
+
+        .bodybg {
+            background: url("HM4.jpg");
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body class="bodybg">
+<div class="topnav" id="myTopnav">
+    <a href="1st.html" class="active">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="mdic.php">Medicines Available</a>
+    <div class="dropdown">
+        <button class="dropbtn">Login
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="doctor.html">Doctor</a>
+            <a href="patient.html">Patient</a>
+        </div>
+    </div>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <div class="logo">Health Care</div>
+</div>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+<style>
+	h1{
+		margin-top: 30vh;
+		font-size: 50px;
+	}
+	h1,h2{
+		font-weight: 900;
+		color: #000;
+	}
+	h2{
+		font-size: 40px;
+	}
+	.blah{
+		background: powderblue;
+	}
+	
+</style>
+<section class="blah">
+<center>
+<h1 style="text-align:centre; font-size: 50px;"><marquee><font color="darkcyan">       STAY    HEALTHY      </marquee></h1>
+</center>
+<center>
+<h2 style="text-align:centre; font-size: 30px;"><marquee><font color="darkcyan"> THANK YOU FOR USING US</marquee></h2>
+</center>
+</section>
+
+ 
+</body>
+</html>
